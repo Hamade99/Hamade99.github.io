@@ -455,6 +455,15 @@ img {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(122, 193, 67, 0.1);
 }
 
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
 .scroll-down {
     position: absolute;
     bottom: 30px;
@@ -1352,6 +1361,7 @@ img {
     .hero h1 {
         font-size: 2rem;
     }
+
 
     .hero h2 {
         font-size: 1.2rem;

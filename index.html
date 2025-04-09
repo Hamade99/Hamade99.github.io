@@ -63,15 +63,23 @@
                     <a href="https://www.linkedin.com/in/ahmad-mohammad-08559a123/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
+
             <div class="hero-image animate-on-scroll">
                 <!-- Image with fallback option -->
                 <div class="profile-image-container">
-                    <img src="images/ahmad-4.jpg" alt="Ahmad Mohammad" class="profile-image" onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex';">
-                    <div id="profile-fallback" class="profile-image-fallback" style="display:none;">
+                    <!-- Try different path variations -->
+                    <img 
+                        src="./images/ahmad-4.jpg" 
+                        alt="Ahmad Mohammad" 
+                        class="profile-image" 
+                        onerror="this.onerror=null; this.src='/images/ahmad-4.jpg'; if(this.src.indexOf('/images/ahmad-4.jpg') > -1) { this.style.display='none'; document.getElementById('profile-fallback').style.display='flex'; }"
+                    >
+                    <div id="profile-fallback" class="profile-image-fallback">
                         <i class="fas fa-user"></i>
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="scroll-down">
             <a href="#about"><i class="fas fa-chevron-down"></i></a>
