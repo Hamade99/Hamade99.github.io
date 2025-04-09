@@ -1,4 +1,5 @@
 /* Base Styles */
+/* Base Styles - Replace your current :root variables with these */
 :root {
     --primary-color: #4ade80; /* Light green */
     --primary-color-dark: #22c55e;
@@ -1236,4 +1237,16 @@ img {
         width: 250px;
         height: 250px;
     }
+
+    /* Add or update this in your style.css file */
+    .nav-links {
+        margin-right: 80px; /* Make room for the theme toggle */
+    }
+
+    @media (max-width: 992px) {
+        .theme-toggle {
+            top: 80px; /* Move toggle below navbar on mobile */
+        }
+    }
+
 }
