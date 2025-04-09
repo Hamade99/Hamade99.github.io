@@ -526,11 +526,11 @@ function initModals() {
 function initThemeToggle() {
     const themeSwitch = document.getElementById('theme-switch');
     
-    // Check for saved theme preference or use user's system preference
+    // Check for saved theme preference - default to light mode
     const savedTheme = localStorage.getItem('theme');
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
-    if (savedTheme === 'dark' || (savedTheme === null && prefersDarkMode)) {
+    // Only apply dark mode if explicitly saved as dark
+    if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
         themeSwitch.checked = true;
     }
