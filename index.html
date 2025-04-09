@@ -65,16 +65,15 @@
             </div>
 
             <div class="hero-image animate-on-scroll">
-                <!-- Image with fallback option -->
                 <div class="profile-image-container">
-                    <!-- Try different path variations -->
+                    <!-- Try with various path options -->
                     <img 
-                        src="./images/ahmad-4.jpg" 
+                        src="ahmad-4.jpg" 
                         alt="Ahmad Mohammad" 
-                        class="profile-image" 
-                        onerror="this.onerror=null; this.src='/images/ahmad-4.jpg'; if(this.src.indexOf('/images/ahmad-4.jpg') > -1) { this.style.display='none'; document.getElementById('profile-fallback').style.display='flex'; }"
+                        class="profile-image"
+                        onerror="if(this.src != 'images/ahmad-4.jpg') this.src = 'images/ahmad-4.jpg'; else if(this.src != '/images/ahmad-4.jpg') this.src = '/images/ahmad-4.jpg'; else this.style.display='none';"
                     >
-                    <div id="profile-fallback" class="profile-image-fallback">
+                    <div id="profile-fallback" class="profile-image-fallback" style="display:none;">
                         <i class="fas fa-user"></i>
                     </div>
                 </div>
